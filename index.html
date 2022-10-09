@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>JavaScript瞑想app</title>
+ <link rel="stylesheet" type="text/css" href="./css/style.css">
+ <link rel="stylesheet" type="text/css" href="./css/reset.css">
+</head>
+<body>
+  <section>
+    <div class="circle">
+    
+      <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20" />
+      </svg>
+    
+      <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20" />
+      </svg>
+    
+    </div>
+
+    <div class="mp_container">
+      <audio loop controls>
+        <source src="./audio/rain.mp3" type="audio/mp3">
+      </audio>
+    </div>
+    <button id="playbtn">PLAY</button>
+    <button id="pausebtn">POUSE</button>
+
+  </section>
+<!-- 確認用script 円周animation-->
+<script>
+// let progress = 0;
+// let timeoutId = undefined;
+
+// const start = () => {
+//   timeoutId = setTimeout(() => {
+//     if (outlineLength > progress) {
+//       outline.style.strokeDashoffset = outlineLength - progress;
+//       progress++;
+//       start();
+//     } else {
+//       clearTimeout(timeoutId);
+//     }
+//   }, 1);
+// }
+// start();
+</script>
+</body>
+ <script type="text/javascript" src="./js/main.js"></script>
+</html>
