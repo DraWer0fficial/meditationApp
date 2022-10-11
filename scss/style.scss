@@ -1,0 +1,8 @@
+// トップ部分のSCSSファイル
+@use "main/top" as *;
+
+// 汎用CSS
+// @use "main/index" as *;
+
+// ボタン部分
+@use "button" as *;

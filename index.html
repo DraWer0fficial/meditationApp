@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>瞑想アプリ</title>
+ <meta name="description" content="ディスクリプションを入力">
+ <meta name="keywords" content="1,2,3">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta property="og:title" content="サイトタイトル"> 
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="https://drawer">
+ <meta property="og:image" content="img/logo.png">
+ <meta property="og:description" content="ディスクリプションを入力"> 
+ <meta property="og:site_name" content="コンテンツタイトル">
+ <!-- サイトアイコン(favicon.ico) -->
+ <link rel="icon" href="favicon.ico">
+ <link rel="apple-touch-icon" sizes="" href="">
+ <!-- 共通CSSファイル -->
+ <link rel="stylesheet" type="text/css" href="./base/reset.css">
+ <link rel="stylesheet" type="text/css" href="./base/common.css">
+ <!-- SCSS読み込み変換用CSSファイル -->
+ <link rel="stylesheet" type="text/css" href="./css/style.css">
+ <!-- 外部リンクCDN -->
+  <!-- フォント追加 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700&family=Zen+Maru+Gothic:wght@700&display=swap"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
+  <!-- アイコン追加 font-awesomeCDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <script src="https://kit.fontawesome.com/eea364082e.js" crossorigin="anonymous"></script>
+  <!-- fontawesomeアイコン追加CDNリンク -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+ </head>
+ <body>
+ <!----- header----->
+ <header id="header">
+ </header>
+ <!----- /header ----->
+ 
+ <!----- main ----->
+ <main>
+<section class="back_fv">
+  <div class="app">
+  <div class="sound_pick">
+    <button data-sound="./audio/rain.mp3"><img src="./image/rain_icon.svg" alt="雨の日のアイコン"></button>
+    <button data-sound="./audio/birdsong_river.mp3"><img src="./image/river_icon.svg" alt="川のアイコン"></button>
+  </div>
+
+  <div class="circle">
+    <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20" />
+    </svg>
+    <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20" />
+    </svg>
+  </div>
+
+  <div class="mp_container">
+    <h3 class="time_display">0:00</h3>
+    <audio loop controls class="song">
+      <source src="./audio/rain.mp3" type="audio/mp3">
+      <source src="./audio/birdsong_river.mp3" type="audio/mp3">
+    </audio>
+    <div class="icon"><img class="play" src="./image/play.svg" alt="再生ボタン"></div>
+    <!-- <div class="replay"><img src="./image/replay.svg" alt="サイド再生ボタン"></div> -->
+  </div>
+  
+  <div class="time_select">
+    <button data-time="180">3 Minutes></button>
+    <button data-time="300" class="medium_mins">5 Minutes</button>
+    <button data-time="600" class="long_mins">10 Minutes</button>
+  </div>
+
+  <button id="playbtn">PLAY</button>
+  <button id="pausebtn">POUSE</button>
+  </div>
+</section>
+ </main>
+ <!----- /main ----->
+ 
+ <!----- footer ----->
+ <footer id="footer">
+
+ </footer>
+ <!----- /footer ----->
+ </body>
+ <!-- 外部CDN読み込み用 jQ -->
+ <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+ <script type="text/javascript" src="./js/main.js"></script>
+</html>

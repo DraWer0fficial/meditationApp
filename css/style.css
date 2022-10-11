@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.back_fv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(../image/back_fv.jpg) no-repeat center;
+  object-fit: cover;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.mp_container {
+  height: 33%;
+  position: relative;
+}
+.mp_container .time_display {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.mp_container .icon {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  z-index: 10;
+}
+.mp_container .replay {
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  width: 30px;
+  height: 30px;
+  transform: scale(1, -1) rotate(250deg);
+}
+
+/* 瞑想線の丸いライン */
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+}
+.circle svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+/* 時間選択ボタン部分*/
+.time_select {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+  height: 33%;
+}
+.time_select button {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  width: 240px;
+  height: 70px;
+}
+.time_select button:nth-of-type(1) {
+  top: 100px;
+}
+.time_select button:nth-of-type(2) {
+  top: 50px;
+}
+
+/* 音楽コントローラー部分 */
+.sound_pick {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sound_pick button {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.sound_pick button:first-of-type {
+  background: #2B7396;
+}
+.sound_pick button:last-of-type {
+  background: #006D4D;
+}
+.sound_pick button img {
+  width: 50%;
+  height: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
